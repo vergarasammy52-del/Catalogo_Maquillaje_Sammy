@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIÈRE — Catálogo de Maquillaje</title>
+  <link rel="stylesheet" href="styles (1).css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║           HEADER / NAV               ║
+       ╚══════════════════════════════════════╝ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <span class="logo-accent">L</span>UMIÈRE
+      </div>
+      <nav class="header__nav" id="mainNav">
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#testimonios">Reseñas</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-icon" id="cartBtn" aria-label="Carrito">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="btn-icon nav-toggle" id="navToggle" aria-label="Menú">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║              HERO BANNER             ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Nueva Colección Primavera 2026</p>
+      <h1 class="hero__title">
+        Resalta tu<br />
+        <em>belleza natural</em><br />
+        hoy 💄
+      </h1>
+      <p class="hero__subtitle">
+        Descubre los productos que harán que cada mirada te recuerde.
+        Formulaciones premium, colores que perduran, tú en tu mejor versión.
+      </p>
+      <div class="hero__ctas">
+        <a href="#productos" class="btn btn--primary">Ver Catálogo</a>
+        <a href="#ofertas" class="btn btn--ghost">Ofertas del día</a>
+      </div>
+      <div class="hero__badges">
+        <span><i class="ri-truck-line"></i> Envío gratis +$80k</span>
+        <span><i class="ri-shield-check-line"></i> Garantía 30 días</span>
+        <span><i class="ri-award-line"></i> 100% Original</span>
+      </div>
+    </div>
+    <div class="hero__visual reveal-right">
+      <div class="hero__img-wrap">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80" alt="Maquillaje de lujo" />
+        <div class="hero__float-card">
+          <i class="ri-star-fill"></i>
+          <div>
+            <strong>4.9 / 5</strong>
+            <small>+3.200 reseñas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          TRUST BAR                   ║
+       ╚══════════════════════════════════════╝ -->
+  <div class="trust-bar reveal">
+    <div class="trust-bar__inner">
+      <div class="trust-item">
+        <i class="ri-truck-line"></i>
+        <span>Envío rápido a todo el país</span>
+      </div>
+      <div class="trust-item">
+        <i class="ri-shield-star-line"></i>
+        <span>Productos 100% originales</span>
+      </div>
+      <div class="trust-item">
+        <i class="ri-refund-2-line"></i>
+        <span>Devolución sin preguntas</span>
+      </div>
+      <div class="trust-item">
+        <i class="ri-secure-payment-line"></i>
+        <span>Pago 100% seguro</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║           CATEGORÍAS                 ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Explora por</p>
+        <h2 class="section__title">Categorías</h2>
+      </div>
+      <div class="categories-grid reveal">
+        <button class="cat-card cat-card--active" data-cat="all">
+          <div class="cat-card__icon"><i class="ri-apps-line"></i></div>
+          <span>Todos</span>
+        </button>
+        <button class="cat-card" data-cat="labiales">
+          <div class="cat-card__icon"><i class="ri-contrast-line"></i></div>
+          <span>Labiales</span>
+        </button>
+        <button class="cat-card" data-cat="bases">
+          <div class="cat-card__icon"><i class="ri-drop-line"></i></div>
+          <span>Bases</span>
+        </button>
+        <button class="cat-card" data-cat="sombras">
+          <div class="cat-card__icon"><i class="ri-palette-line"></i></div>
+          <span>Sombras</span>
+        </button>
+        <button class="cat-card" data-cat="cuidado">
+          <div class="cat-card__icon"><i class="ri-leaf-line"></i></div>
+          <span>Cuidado Facial</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          OFERTA DESTACADA            ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="promo-banner reveal" id="ofertas">
+    <div class="promo-banner__inner">
+      <div class="promo-banner__text">
+        <p class="promo-banner__eyebrow">⚡ Oferta Flash — Solo hoy</p>
+        <h2>Hasta <strong>40% OFF</strong> en labiales premium</h2>
+        <p>No dejes pasar esta oportunidad. Quedan pocas unidades y el tiempo corre.</p>
+        <a href="#productos" class="btn btn--dark">Aprovechar ahora</a>
+      </div>
+      <div class="promo-banner__countdown">
+        <p>La oferta termina en:</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown__block"><span id="cd-h">05</span><small>hrs</small></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__block"><span id="cd-m">42</span><small>min</small></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__block"><span id="cd-s">00</span><small>seg</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║           PRODUCTOS                  ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section" id="productos">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Lo que todas quieren</p>
+        <h2 class="section__title">Productos Estrella</h2>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Tarjetas generadas por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          TESTIMONIOS                 ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section section--tinted" id="testimonios">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__eyebrow">Lo que dicen de nosotras</p>
+        <h2 class="section__title">Reseñas reales 💬</h2>
+      </div>
+      <div class="testimonials-grid reveal">
+        <div class="test-card">
+          <div class="test-card__stars">★★★★★</div>
+          <p>"El labial Ruby Rose me duró todo el día sin retoque. Nunca había encontrado algo así a este precio. ¡Totalmente enamorada!"</p>
+          <div class="test-card__author">
+            <img src="https://i.pravatar.cc/60?img=47" alt="Valentina" />
+            <div><strong>Valentina M.</strong><small>Bogotá</small></div>
+          </div>
+        </div>
+        <div class="test-card test-card--featured">
+          <div class="test-card__stars">★★★★★</div>
+          <p>"La base Satin Glow cambió mi vida. Cubre perfectamente, se ve natural y me dura horas. El envío llegó súper rápido. ¡Gracias LUMIÈRE!"</p>
+          <div class="test-card__author">
+            <img src="https://i.pravatar.cc/60?img=32" alt="Camila" />
+            <div><strong>Camila R.</strong><small>Medellín</small></div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-card__stars">★★★★★</div>
+          <p>"Compré la paleta Smoky Eyes y los colores son increíbles. La pigmentación es brutal y el empaque es precioso. 100% recomendado."</p>
+          <div class="test-card__author">
+            <img src="https://i.pravatar.cc/60?img=25" alt="Daniela" />
+            <div><strong>Daniela S.</strong><small>Cali</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║            FOOTER                    ║
+       ╚══════════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="header__logo"><span class="logo-accent">L</span>UMIÈRE</div>
+        <p>Tu destino de belleza premium.<br/>Donde cada producto cuenta una historia.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#testimonios">Reseñas</a>
+      </div>
+      <div class="footer__links">
+        <h4>Ayuda</h4>
+        <a href="#">¿Cómo comprar?</a>
+        <a href="#">Política de envíos</a>
+        <a href="#">Devoluciones</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 LUMIÈRE Beauty. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║         CARRITO LATERAL              ║
+       ╚══════════════════════════════════════╝ -->
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__header">
+      <h3>Tu Bolsa <i class="ri-shopping-bag-line"></i></h3>
+      <button class="btn-icon" id="cartClose"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="cart-drawer__body" id="cartBody">
+      <p class="cart-empty">Tu bolsa está vacía 🛍️</p>
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <button class="btn btn--primary" style="width:100%" id="whatsappOrder">
+        <i class="ri-whatsapp-line"></i> Pedir por WhatsApp
+      </button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          MODAL PRODUCTO              ║
+       ╚══════════════════════════════════════╝ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal__close" id="modalClose"><i class="ri-close-line"></i></button>
+      <div class="modal__img-wrap">
+        <img id="modalImg" src="" alt="" />
+        <span class="modal__badge" id="modalBadge"></span>
+      </div>
+      <div class="modal__info">
+        <p class="modal__cat" id="modalCat"></p>
+        <h2 class="modal__title" id="modalTitle"></h2>
+        <div class="modal__stars">★★★★★ <small id="modalReviews"></small></div>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__price-row">
+          <span class="modal__price" id="modalPrice"></span>
+          <span class="modal__old-price" id="modalOldPrice"></span>
+        </div>
+        <p class="modal__scarcity" id="modalScarcity"></p>
+        <button class="btn btn--primary modal__cta" id="modalAddCart">
+          <i class="ri-shopping-bag-line"></i> Agregar al carrito
+        </button>
+        <button class="btn btn--whatsapp modal__wa" id="modalWhatsapp">
+          <i class="ri-whatsapp-line"></i> Comprar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║       BOTÓN WHATSAPP FLOTANTE        ║
+       ╚══════════════════════════════════════╝ -->
+  <a href="https://wa.me/573002798050?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20LUMIÈRE%20Beauty%20🛍️"
+     class="wa-float" target="_blank" aria-label="Comprar por WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
