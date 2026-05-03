@@ -324,7 +324,7 @@ document.getElementById('whatsappOrder').addEventListener('click', () => {
   const msg = encodeURIComponent(
     `Hola! Quiero hacer el siguiente pedido de LUMIÈRE Beauty 🛍️\n\n${list}\n\nTotal: ${fmt(total)}\n\n¿Cómo procedo?`
   );
-  window.open(`https://wa.me/573001234567?text=${msg}`, '_blank');
+  window.open(`https://wa.me/573002798050?text=${msg}`, '_blank');
 });
 
 /* ================================================================
@@ -374,7 +374,7 @@ document.getElementById('modalWhatsapp').addEventListener('click', () => {
   const msg = encodeURIComponent(
     `Hola! Me interesa el producto *${activeModal.name}* (${fmt(activeModal.price)}) de LUMIÈRE Beauty. ¿Cómo lo adquiero? 💄`
   );
-  window.open(`https://wa.me/573001234567?text=${msg}`, '_blank');
+  window.open(`https://wa.me/573002798050?text=${msg}`, '_blank');
 });
 
 /* ================================================================
