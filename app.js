@@ -12,7 +12,7 @@ const PRODUCTS = [
     name: "Ruby Rose Velvet",
     cat: "labiales",
     catLabel: "Labial",
-    price: 42000,
+    price: 000,
     oldPrice: 68000,
     desc: "Fórmula ultra-pigmentada que dura hasta 18 horas sin resecar. Efecto terciopelo irresistible.",
     img: "https://images.unsplash.com/photo-1586495777744-4e6232bf2ea7?w=500&q=80",
@@ -20,14 +20,15 @@ const PRODUCTS = [
     badgeType: "offer",
     scarcity: "⚡ Solo quedan 4 unidades",
     stars: 4.9,
-    reviews: "1.2k reseñas"
+    reviews: "1.2k reseñas",
+    soldOut: true
   },
   {
     id: 2,
     name: "Satin Glow Foundation",
     cat: "bases",
     catLabel: "Base",
-    price: 89000,
+    price: 000,
     oldPrice: null,
     desc: "Cobertura media-total con acabado satinado. SPF 30. Duración de 24 horas. 40 tonos disponibles.",
     img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80",
@@ -35,14 +36,15 @@ const PRODUCTS = [
     badgeType: "new",
     scarcity: "🔥 Más vendido esta semana",
     stars: 4.8,
-    reviews: "987 reseñas"
+    reviews: "987 reseñas",
+    soldOut: true
   },
   {
     id: 3,
     name: "Smoky Eyes Palette",
     cat: "sombras",
     catLabel: "Paleta",
-    price: 115000,
+    price: 000,
     oldPrice: 149000,
     desc: "12 tonos altamente pigmentados. Acabados matte, shimmer y glitter. Perfecta para looks día y noche.",
     img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500&q=80",
@@ -50,44 +52,47 @@ const PRODUCTS = [
     badgeType: "offer",
     scarcity: "⚡ Últimas 7 unidades",
     stars: 5.0,
-    reviews: "2.1k reseñas"
+    reviews: "2.1k reseñas",
+    soldOut: true
   },
   {
     id: 4,
-    name: "Rose Glow Serum",
+    name: "Rice Raw Pulp Rejuvenating Set",
     cat: "cuidado",
     catLabel: "Cuidado Facial",
-    price: 78000,
+    price: 54990,
     oldPrice: null,
-    desc: "Sérum hidratante con extracto de rosa y ácido hialurónico. Piel radiante en 7 días garantizados.",
-    img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80",
+    desc: "Kit facial rejuvenecedor con extracto de arroz. Hidrata profundamente, nutre la piel, reduce los poros y brinda un cuidado suave y duradero.",
+    img: "Img-Productos/Cuidado Facial/Rice Raw Pulp Rejuvenating Set.png",
     badge: "Nuevo",
     badgeType: "new",
     scarcity: null,
     stars: 4.7,
-    reviews: "543 reseñas"
+    reviews: "543 reseñas",
+    soldOut: false
   },
   {
     id: 5,
-    name: "Coral Bliss Lip Gloss",
-    cat: "labiales",
-    catLabel: "Labial",
-    price: 35000,
-    oldPrice: 45000,
-    desc: "Brillo jugoso con vitamina E. Efecto voluminizador. Aroma a fresa que dura horas.",
-    img: "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=500&q=80",
-    badge: "22% OFF",
-    badgeType: "offer",
-    scarcity: "⚡ Quedan 9 unidades",
-    stars: 4.6,
-    reviews: "761 reseñas"
+    name: "Rice Raw Pulp Whitening Travel Set",
+    cat: "cuidado",
+    catLabel: "Cuidado Facial",
+    price: 27990,
+    oldPrice: null,
+    desc: "Kit facial de viaje con extracto de arroz. Incluye limpiador, tónico, loción, sérum y crema facial. Ilumina la piel, hidrata y mejora la textura en cualquier lugar.",
+    img: "Img-Productos/Cuidado Facial/Rice Raw Pulp Whitening Travel Set.png",
+    badge: "Nuevo",
+    badgeType: "new",
+    scarcity: "Edición viaje",
+    stars: 4.5,
+    reviews: "198 reseñas",
+    soldOut: false
   },
   {
     id: 6,
     name: "Golden Hour Highlighter",
     cat: "sombras",
     catLabel: "Iluminador",
-    price: 62000,
+    price: 000,
     oldPrice: null,
     desc: "Iluminador en polvo con partículas de oro. Brillo de larga duración para un look radiante.",
     img: "https://images.unsplash.com/photo-1583241800698-e8ab01d2a0bf?w=500&q=80",
@@ -95,14 +100,15 @@ const PRODUCTS = [
     badgeType: "offer",
     scarcity: "🔥 En tendencia ahora",
     stars: 4.9,
-    reviews: "1.4k reseñas"
+    reviews: "1.4k reseñas",
+    soldOut: true
   },
   {
     id: 7,
     name: "Velvet Matte Foundation",
     cat: "bases",
     catLabel: "Base",
-    price: 95000,
+    price: 000,
     oldPrice: 120000,
     desc: "Control total del brillo con acabado matte de larga duración. Fórmula sin aceites. 30 tonos.",
     img: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80",
@@ -110,22 +116,24 @@ const PRODUCTS = [
     badgeType: "offer",
     scarcity: "⚡ Solo 5 unidades",
     stars: 4.8,
-    reviews: "892 reseñas"
+    reviews: "892 reseñas",
+    soldOut: true
   },
   {
     id: 8,
-    name: "Vitamin C Glow Cream",
+    name: "Rose Hyaluronic Acid Moisturizing Set",
     cat: "cuidado",
     catLabel: "Cuidado Facial",
-    price: 68000,
+    price: 54990,
     oldPrice: null,
-    desc: "Crema de día con vitamina C pura al 10%. Ilumina, unifica y protege tu piel a diario.",
-    img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80",
-    badge: "Nuevo",
-    badgeType: "new",
+    desc: "Kit facial con ácido hialurónico y extracto de rosa. Proporciona hidratación profunda, efecto antioxidante, ayuda a reducir signos de la edad y minimiza los poros.",
+    img: "Img-Productos/Cuidado Facial/Rose Hyaluronic Acid Moisturizing Set.png",
+    badge: "98% Natural",
+    badgeType: "hot",
     scarcity: null,
-    stars: 4.5,
-    reviews: "348 reseñas"
+    stars: 4.8,
+    reviews: "421 reseñas",
+    soldOut: false
   }
 ];
 
@@ -159,6 +167,9 @@ function renderProducts(filter = 'all') {
     card.innerHTML = `
       <div class="product-card__img">
         <img src="${p.img}" alt="${p.name}" loading="lazy" />
+        ${p.soldOut
+          ? `<span class="product-card__badge product-card__badge--soldout">Agotado</span>`
+          : ''}
         ${p.badge
           ? `<span class="product-card__badge product-card__badge--${p.badgeType}">${p.badge}</span>`
           : ''}
